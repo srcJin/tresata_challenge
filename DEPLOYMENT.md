@@ -71,7 +71,7 @@ sudo apt install git -y
 ### 4.1 Clone Repository
 ```bash
 cd ~
-git clone https://github.com/YOUR_USERNAME/tresata_challenge.git
+git clone https://github.com/srcJin/tresata_challenge.git
 cd tresata_challenge
 ```
 
@@ -108,14 +108,39 @@ Press `Ctrl+X`, then `Y`, then `Enter` to save.
 ## Step 6: Run Setup Script
 
 ```bash
-chmod +x 1_setup.sh
-./1_setup.sh
+chmod +x 1_setup_environment.sh
+./1_setup_environment.sh
 ```
+
+## Accept Conda Terms of Acceptance
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 
 This will:
 - Create conda environment `nanda_agent`
 - Install Python dependencies
 - Set up the project structure
+
+
+
+## Use Self-Signed Certificates for EC2
+
+  If you need HTTPS, generate self-signed certificates:
+
+  # On your EC2 instance
+  cd ~/tresata_challenge
+
+  # Generate self-signed certificate (valid for 365 days)
+  openssl req -x509 -newkey rsa:4096 -keyout privkey.pem -out fullchain.pem
+  -days 365 -nodes -subj "/CN=18.224.228.207"
+
+  After it completes, verify the certificates were created:
+
+  ls -lh ~/tresata_challenge/*.pem
+
+  You should see:
+  -rw-r--r-- 1 ubuntu ubuntu 2.0K ... fullchain.pem
+  -rw------- 1 ubuntu ubuntu 3.2K ... privkey.pem
 
 ## Step 7: Test the Agent Locally
 
