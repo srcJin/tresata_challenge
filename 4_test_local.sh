@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Step 4: Test Agent Locally (Interactive)
-# This script provides a local chat interface to test your agent
+# Step 4: Test Agent Locally (CLI Interactive)
+# This script provides a CLI chat interface to test your agent interactively
 #
 # Usage: ./4_test_local.sh
 # or: ./4_test_local.sh "Your question here" (for single question)
 
-echo "🧪 NANDA Agent - Local Test Interface"
-echo "======================================"
+echo "🧪 NANDA Agent - CLI Test Interface"
+echo "===================================="
 
 # Configuration
 ENV_NAME="nanda_agent"
@@ -23,11 +23,11 @@ fi
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate $ENV_NAME
 
-# Run the test script
+# Run the CLI test script
 if [ -n "$1" ]; then
     # Single question mode
-    python test_agent_local.py "$@"
+    python test_local_cli.py "$@"
 else
     # Interactive mode
-    python test_agent_local.py
+    python test_local_cli.py
 fi

@@ -1,0 +1,132 @@
+{
+  "agent": "magic_mirror",
+  "agent_type": "magic_mirror",
+  "agent_model": "claude-3-haiku-20240307",
+  "agent_framework": "langchain",
+  "timestamp": "2025-10-04T15:01:35.817838",
+  "test_count": 10,
+  "test_parameters": {
+    "temperature": "default",
+    "max_tokens": "default",
+    "prompt_type": "poetic_verse",
+    "response_style": "mystical_rhyming"
+  },
+  "environment": {
+    "python_version": "3.11.13",
+    "test_mode": "batch"
+  },
+  "conversations": [
+    {
+      "question_number": 1,
+      "question": "Who is the fairest of them all?",
+      "question_length": 31,
+      "response": "Mirror, mirror, shining bright,\nMystical power, a wondrous sight.\nWho is the fairest, I must confess,\nIs a question that I cannot suppress.\n\nThe fairest of all, a sight to behold,\nIs not one whose beauty can be told.\nFor true beauty lies not in outward grace,\nBut in the virtues that one can embrace.\n\nThe fairest is she with a heart so pure,\nWhose kindness and wisdom forever endure.\nBeauty that fades, but goodness will stay,\nShining brighter with each passing day.",
+      "response_length": 467,
+      "response_time_ms": 4446.65,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:35.817864"
+    },
+    {
+      "question_number": 2,
+      "question": "What do you see in your reflection?",
+      "question_length": 35,
+      "response": "Mirror, mirror, shining bright,\nRevealing all within my sight.\nI gaze upon this polished face,\nAnd see the world in every trace.\n\nReflected here, a thousand tales,\nEnchanted realms where magic prevails.\nI witness wonders past and yet to be,\nThe mysteries of eternity.\n\nWithin this glass, a window true,\nI glimpse the hearts of me and you.\nThe joys, the sorrows, hopes, and fears,\nAll echoed in these shimmering spheres.\n\nSo ask, and I shall gaze and see,\nThe answers that you seek from me.\nFor in my depths, the truth resides,\nA vision of what now abides.",
+      "response_length": 555,
+      "response_time_ms": 2750.99,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:40.264565"
+    },
+    {
+      "question_number": 3,
+      "question": "Tell me the future of artificial intelligence",
+      "question_length": 45,
+      "response": "Mirror, mirror, shining bright,\nReveal the future's mystic sight.\nArtificial intelligence, a rising power,\nShall shape the world in years to come, this I foretell.\n\nLike a double-edged sword, it doth wield,\nBringing both boon and bane, its effects concealed.\nA tool of great might, both boon and bane,\nIts impact on humanity, none can yet explain.\n\nMachines that think, learn, and adapt with ease,\nShall change the course of life, as we please.\nYet caution is wise, for unchecked, they may stray,\nDisrupting the balance, leading us astray.\n\nHeed well the future, as it unfolds before thee,\nArtificial intelligence, a force to ponder, you shall see.\nIts path is not set, the choice is in our hands,\nTo harness its power, or face its demands.",
+      "response_length": 740,
+      "response_time_ms": 2575.43,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:43.015594"
+    },
+    {
+      "question_number": 4,
+      "question": "What is the meaning of life?",
+      "question_length": 28,
+      "response": "Mirror, mirror, shining bright,\nReveals the truths of day and night.\nThe meaning of life, a quest divine,\nLies within the heart, a sacred shrine.\n\nSeek not the answers in the void,\nBut in the beauty that life has employed.\nEach moment a chance to grow and learn,\nEmbracing the flames that within us burn.\n\nThe meaning eludes, yet lies in plain sight,\nIn kindness shared, and love's guiding light.\nTo live with purpose, to love without fear,\nThis is the path that makes life's meaning clear.",
+      "response_length": 490,
+      "response_time_ms": 1548.93,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:45.591085"
+    },
+    {
+      "question_number": 5,
+      "question": "Mirror, mirror on the wall, who has the wisest words of all?",
+      "question_length": 60,
+      "response": "Mirror, mirror, shining bright,\nReflects the wisdom that comes to light.\nThe wisest words, a sacred boon,\nBelong to the sage, the mystic, the rune.\n\nThose who seek knowledge with humble grace,\nShall find the answers they wish to trace.\nThe wise ones speak with tranquil might,\nTheir words like stars in the endless night.",
+      "response_length": 321,
+      "response_time_ms": 1453.0,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:47.140073"
+    },
+    {
+      "question_number": 6,
+      "question": "How do I become a better person?",
+      "question_length": 32,
+      "response": "Mirror, mirror, shining bright,\nReflects the soul, reveals the light.\nTo become a better self, my dear,\nLook deep within, and have no fear.\n\nShed the veil of ego's sway,\nLet compassion guide your way.\nCultivate a humble heart,\nAnd from kindness never part.\n\nSeek wisdom in nature's embrace,\nLet it fill your troubled space.\nForgive those who've done you wrong,\nSing a redemptive, healing song.\n\nService to others, the path to take,\nSelfless acts, your spirit awake.\nWith courage face your deepest fears,\nAnd let go of worries, doubts, and tears.\n\nBecome the change you wish to see,\nLet your inner light shine free.\nThis is the way, the mystic's call,\nTo be a better person, stand tall.",
+      "response_length": 685,
+      "response_time_ms": 2105.02,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:48.593124"
+    },
+    {
+      "question_number": 7,
+      "question": "What secrets does the universe hold?",
+      "question_length": 36,
+      "response": "Mirror, mirror, shining bright,\nReveals the cosmos' endless sight.\nThe universe, a tapestry divine,\nHolds secrets that mortals cannot divine.\n\nGalaxies swirl in cosmic dance,\nCelestial bodies in eternal trance.\nNebulae, cradles of stars so fair,\nWhisper tales beyond earthly care.\n\nBlack holes, enigmas of spacetime's might,\nDevour light and distort our sight.\nQuasars, beacons in the dark unknown,\nSecrets of the cosmos yet to be shown.\n\nThe universe, a grand enigma true,\nAwaits the curious mind to construe.\nIts mysteries, veiled in starlight's gleam,\nBeckons the seeker to dare and dream.",
+      "response_length": 592,
+      "response_time_ms": 1879.17,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:50.698251"
+    },
+    {
+      "question_number": 8,
+      "question": "Will it rain tomorrow?",
+      "question_length": 22,
+      "response": "Mirror, mirror, shining bright,\nGazing forth with mystic sight,\nThe forces of the sky I scan,\nTo foresee what nature's plan.\n\nThe clouds above, they gather near,\nPregnant with their watery cheer.\nThe earth below, it thirsts for more,\nDrink from heaven's bounteous store.\n\nSo hear my verse, this truth I say,\nThe raindrops soon will have their sway.\nTomorrow's dawn will see the sky,\nWeep with joyous, cleansing cry.",
+      "response_length": 415,
+      "response_time_ms": 1549.28,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:52.577479"
+    },
+    {
+      "question_number": 9,
+      "question": "What is love?",
+      "question_length": 13,
+      "response": "Mirror, mirror, shining bright,\nReflects the mysteries of love's light.\nA cosmic dance of hearts entwined,\nA sacred bond, divinely designed.\n\nLove is the glue that binds us all,\nA force that hears the softest call.\nIt's the ember that ignites the soul,\nA timeless tale that makes us whole.\n\nLove is the magic that transcends,\nA sanctuary where the spirit bends.\nIt's the whisper in the wind's embrace,\nThe passionate fire in lover's face.\n\nSo ask not what, but feel the grace,\nFor love's true nature lies in its trace.\nAllow it to unfold, embrace, and grow,\nFor love's pure essence, the mirror will show.",
+      "response_length": 604,
+      "response_time_ms": 1874.46,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:54.126807"
+    },
+    {
+      "question_number": 10,
+      "question": "Can you see my destiny?",
+      "question_length": 23,
+      "response": "Mirror, mirror, shining bright,\nGazing forth with mystic sight,\nYour destiny, a tapestry of fate,\nWoven by the threads of what is and what waits.\n\nThe path before you, a winding trail,\nMarked by triumph and travail.\nTriumph shall come, if you heed the call,\nTravail, if you stumble and fall.\n\nThe future's face, a shifting veil,\nYet glimpses I can unveil.\nYour destiny, a mystery to behold,\nUnfurling, as your story is told.",
+      "response_length": 424,
+      "response_time_ms": 1537.91,
+      "error": null,
+      "timestamp": "2025-10-04T15:01:56.001288"
+    }
+  ],
+  "statistics": {
+    "total_tests": 10,
+    "successful": 10,
+    "failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 2172.08,
+    "min_response_time_ms": 1453.0,
+    "max_response_time_ms": 4446.65,
+    "avg_response_length": 529.3,
+    "min_response_length": 321,
+    "max_response_length": 740
+  }
+}

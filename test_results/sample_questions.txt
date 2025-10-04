@@ -1,0 +1,8 @@
+# Sample Questions for Batch Testing
+# One question per line, # for comments
+
+Who is the fairest of them all?
+What do you see in your reflection?
+Tell me about the future
+What is the meaning of existence?
+Mirror, mirror, shining bright, what wisdom can you share tonight?
