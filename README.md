@@ -24,5 +24,14 @@ Critical analysis of adapter flaws and improvement suggestions
 Deadline: Saturday, Oct 4th, 12:00 PM EST
 Submit via Google Form: Challenge Submission form (Enable share mode for google docs as viewer)
 
+
+
+mcp_utils.py
+
+
+
+
+
+
 Looking forward to your submission!
 
