@@ -1,0 +1,3 @@
+[submodule "tresata_challenge_adapter"]
+	path = tresata_challenge_adapter
+	url = https://github.com/srcJin/tresata_challenge_adapter
