@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Step 5: Open Local Frontend
+# Step 4: Open Local Frontend
 # Opens the Magic Mirror chat interface (simple HTML file)
 #
-# Usage: ./5_run_frontend.sh
+# Usage: ./4_run_frontend.sh
 
 echo "🌐 Magic Mirror - Local Frontend"
 echo "================================="

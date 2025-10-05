@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Step 4: Test Agent Locally (CLI Interactive)
+# Step 3: Test Agent Locally (CLI Interactive)
 # This script provides a CLI chat interface to test your agent interactively
 #
-# Usage: ./4_test_local.sh
-# or: ./4_test_local.sh "Your question here" (for single question)
+# Usage: ./3_test_local.sh
+# or: ./3_test_local.sh "Your question here" (for single question)
 
 echo "🧪 NANDA Agent - CLI Test Interface"
 echo "===================================="
