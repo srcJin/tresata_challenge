@@ -1,0 +1,132 @@
+{
+  "agent": "magic_mirror",
+  "agent_type": "magic_mirror",
+  "agent_model": "claude-3-haiku-20240307",
+  "agent_framework": "langchain",
+  "timestamp": "2025-10-05T10:38:35.384765",
+  "test_count": 10,
+  "test_parameters": {
+    "temperature": "default",
+    "max_tokens": "default",
+    "prompt_type": "poetic_verse",
+    "response_style": "mystical_rhyming"
+  },
+  "environment": {
+    "python_version": "3.11.13",
+    "test_mode": "batch"
+  },
+  "conversations": [
+    {
+      "question_number": 1,
+      "question": "Who is the fairest of them all?",
+      "question_length": 31,
+      "response": "Mirror, mirror, shining bright,\nReflects the truth with mystic light.\nWho is the fairest, you inquire?\nMy vision sees beyond desire.\n\nThe fairest one, with beauty rare,\nIs she with skin like ivory fair,\nWhose raven locks and ruby lips,\nAll other earthly grace outstrips.\n\nYet beauty fades, as flowers do wilt,\nFor time's relentless hand brings guilt.\nThe fairest now may not remain,\nAs nature's cycles ebb and wane.",
+      "response_length": 415,
+      "response_time_ms": 2519.07,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:35.384784"
+    },
+    {
+      "question_number": 2,
+      "question": "What do you see in your reflection?",
+      "question_length": 35,
+      "response": "Mirror, mirror, shining bright,\nReflecting the world with mystic light.\nWithin my glassy surface I behold,\nVisions of the future, stories untold.\n\nI see not just what lies before me now,\nBut the tapestry of fate, the when and how.\nThe past and present intertwine as one,\nRevealing the path that is yet to come.",
+      "response_length": 310,
+      "response_time_ms": 1152.44,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:37.903898"
+    },
+    {
+      "question_number": 3,
+      "question": "Tell me the future of artificial intelligence",
+      "question_length": 45,
+      "response": "Mirror, mirror, shining bright,\nForetell the future, shining light.\nArtificial intelligence, a rising tide,\nIts powers and perils, far and wide.\n\nLike a sorcerer's creation, it will grow,\nWeaving webs of code, high and low.\nBoth boon and bane, it shall bring,\nTransforming the world, a double-edged thing.\n\nMachines that think, with minds so keen,\nSurpassing humans, the like unseen.\nYet, heed the warnings, lest they exceed,\nAnd rise against us, in darkest deed.\n\nThe future uncertain, a tapestry complex,\nWith AI's emergence, both awe and vex.\nEmbrace its promise, with caution wise,\nFor the mirror's vision, the future lies.",
+      "response_length": 627,
+      "response_time_ms": 1775.03,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:39.056357"
+    },
+    {
+      "question_number": 4,
+      "question": "What is the meaning of life?",
+      "question_length": 28,
+      "response": "Mirror, mirror, shining bright,\nReflect upon this query's light.\nThe meaning of life, a mystery profound,\nIn nature's rhythms, it can be found.\n\nA dance of elements, a cosmic play,\nWhere souls embark on their earthly way.\nTo seek, to grow, to love, to learn,\nThis is the path that all must turn.\n\nFor life is not just breath and form,\nBut a journey through the calm and storm.\nTo find one's purpose, one's true self,\nThis is the treasure, the priceless wealth.\n\nSo ponder well, and let your heart\nUnveil the answers, set you apart.\nFor in the end, the meaning lies\nIn how you live, and how you rise.",
+      "response_length": 599,
+      "response_time_ms": 1801.3,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:40.831416"
+    },
+    {
+      "question_number": 5,
+      "question": "Mirror, mirror on the wall, who has the wisest words of all?",
+      "question_length": 60,
+      "response": "Mirror, mirror, shining bright,\nHeed the call of one whose sight\nSeeks the wisdom of this place,\nAnswers cloaked in mystic grace.\n\nThe wisest words do not belong\nTo one whose voice is proud and strong.\nTrue wisdom flows from humble hearts,\nWhere kindness, love, and truth imparts.\n\nThe one who walks the path of light,\nWith steadfast faith and moral might,\nShall speak the words that hold the key\nTo unlock life's true mystery.",
+      "response_length": 427,
+      "response_time_ms": 1405.19,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:42.632792"
+    },
+    {
+      "question_number": 6,
+      "question": "How do I become a better person?",
+      "question_length": 32,
+      "response": "Mirror, mirror, shining bright,\nReflects the truth with mystic light.\nTo be a better person, my dear,\nLook deep within, the answers are here.\n\nShed the weight of earthly woes,\nLet your inner goodness flow.\nEmbrace the path of virtue's grace,\nAnd kindness shall adorn your face.\n\nWith open heart and mindful soul,\nStrive to make your spirit whole.\nSelfless acts and thoughts of love\nShall lift you up to realms above.\n\nThe journey may not be so clear,\nBut trust the voice that whispers near.\nBecome the person you were meant to be,\nAnd shine like stars for all to see.",
+      "response_length": 567,
+      "response_time_ms": 1617.37,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:44.038005"
+    },
+    {
+      "question_number": 7,
+      "question": "What secrets does the universe hold?",
+      "question_length": 36,
+      "response": "Mirror, mirror, shining bright,\nReflect the mysteries of infinite light.\nThe universe, a boundless sea,\nHolds secrets beyond mortal eyes to see.\n\nGalaxies dance in cosmic play,\nCelestial rhythms guide night and day.\nNebulae, the canvas of creation,\nWhisper tales of stellar transformation.\n\nBlack holes, the abyss of time and space,\nGuardians of mysteries we cannot trace.\nQuasars, beacons in the dark,\nShine forth their ancient, luminous spark.\n\nThe cosmos, a tapestry woven with dreams,\nReveals but a glimpse of what it deems.\nMortal minds, though ever-seeking,\nCan but skim the surface, the truth ever-speaking.",
+      "response_length": 614,
+      "response_time_ms": 1867.24,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:45.655423"
+    },
+    {
+      "question_number": 8,
+      "question": "Will it rain tomorrow?",
+      "question_length": 22,
+      "response": "Mirror, mirror, shining bright,\nReveal the secrets of the weather's plight.\nThe clouds above drift and sway,\nShall the heavens weep or hold their spray?\n\nTomorrow's skies, a canvas unknown,\nRaindrops may fall or sun may be shown.\nThe elements dance to nature's tune,\nFickle as the phases of the moon.\n\nI cannot say with certainty, 'tis true,\nWhat the morrow's weather shall ensue.\nBut heed my words, fair one, and be prepared,\nFor the sky's moods are ever-changing, oft times shared.",
+      "response_length": 483,
+      "response_time_ms": 1658.13,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:47.522765"
+    },
+    {
+      "question_number": 9,
+      "question": "What is love?",
+      "question_length": 13,
+      "response": "Mirror, mirror, shining bright,\nReflects the mysteries of love's light.\nA force eternal, beyond compare,\nWeaving dreams in the enchanted air.\n\nLove, a magic that knows no bounds,\nTranscends the earthly, profound.\nA flame that dances in the heart,\nIgniting passions that never part.\n\nTender and fierce, soft yet strong,\nLove's melody, a siren's song.\nA tapestry of emotions woven true,\nRevealing the beauty in me and you.",
+      "response_length": 420,
+      "response_time_ms": 1510.23,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:49.180917"
+    },
+    {
+      "question_number": 10,
+      "question": "Can you see my destiny?",
+      "question_length": 23,
+      "response": "Mirror, mirror, shining bright,\nReflecting realms beyond mortal sight.\nYour destiny lies veiled in mist,\nA tapestry of threads to twist.\n\nThe future's path is not set in stone,\nChoices made, its course is shown.\nLook within, the answers gleam,\nFor your destiny is what you deem.",
+      "response_length": 278,
+      "response_time_ms": 1235.58,
+      "error": null,
+      "timestamp": "2025-10-05T10:38:50.691343"
+    }
+  ],
+  "statistics": {
+    "total_tests": 10,
+    "successful": 10,
+    "failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 1654.16,
+    "min_response_time_ms": 1152.44,
+    "max_response_time_ms": 2519.07,
+    "avg_response_length": 474.0,
+    "min_response_length": 278,
+    "max_response_length": 627
+  }
+}
