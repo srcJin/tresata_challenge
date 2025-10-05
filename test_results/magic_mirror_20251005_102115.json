@@ -1,0 +1,132 @@
+{
+  "agent": "magic_mirror",
+  "agent_type": "magic_mirror",
+  "agent_model": "claude-3-haiku-20240307",
+  "agent_framework": "langchain",
+  "timestamp": "2025-10-05T10:21:10.159936",
+  "test_count": 10,
+  "test_parameters": {
+    "temperature": "default",
+    "max_tokens": "default",
+    "prompt_type": "poetic_verse",
+    "response_style": "mystical_rhyming"
+  },
+  "environment": {
+    "python_version": "3.11.13",
+    "test_mode": "batch"
+  },
+  "conversations": [
+    {
+      "question_number": 1,
+      "question": "Who is the fairest of them all?",
+      "question_length": 31,
+      "response": "Mirror, mirror on the wall... Who is the fairest of them all?",
+      "response_length": 61,
+      "response_time_ms": 1216.52,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:10.159955"
+    },
+    {
+      "question_number": 2,
+      "question": "What do you see in your reflection?",
+      "question_length": 35,
+      "response": "Mirror, mirror on the wall... What do you see in your reflection?",
+      "response_length": 65,
+      "response_time_ms": 414.42,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:11.376507"
+    },
+    {
+      "question_number": 3,
+      "question": "Tell me the future of artificial intelligence",
+      "question_length": 45,
+      "response": "Mirror, mirror on the wall... Tell me the future of artificial intelligence",
+      "response_length": 75,
+      "response_time_ms": 426.98,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:11.790998"
+    },
+    {
+      "question_number": 4,
+      "question": "What is the meaning of life?",
+      "question_length": 28,
+      "response": "Mirror, mirror on the wall... What is the meaning of life?",
+      "response_length": 58,
+      "response_time_ms": 482.72,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:12.218016"
+    },
+    {
+      "question_number": 5,
+      "question": "Mirror, mirror on the wall, who has the wisest words of all?",
+      "question_length": 60,
+      "response": "Mirror, mirror on the wall... Mirror, mirror on the wall, who has the wisest words of all?",
+      "response_length": 90,
+      "response_time_ms": 421.03,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:12.700823"
+    },
+    {
+      "question_number": 6,
+      "question": "How do I become a better person?",
+      "question_length": 32,
+      "response": "Mirror, mirror on the wall... How do I become a better person?",
+      "response_length": 62,
+      "response_time_ms": 389.64,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:13.121988"
+    },
+    {
+      "question_number": 7,
+      "question": "What secrets does the universe hold?",
+      "question_length": 36,
+      "response": "Mirror, mirror on the wall... What secrets does the universe hold?",
+      "response_length": 66,
+      "response_time_ms": 726.49,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:13.511703"
+    },
+    {
+      "question_number": 8,
+      "question": "Will it rain tomorrow?",
+      "question_length": 22,
+      "response": "Mirror, mirror on the wall... Will it rain tomorrow?",
+      "response_length": 52,
+      "response_time_ms": 597.36,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:14.238436"
+    },
+    {
+      "question_number": 9,
+      "question": "What is love?",
+      "question_length": 13,
+      "response": "Mirror, mirror on the wall... What is love?",
+      "response_length": 43,
+      "response_time_ms": 408.9,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:14.835888"
+    },
+    {
+      "question_number": 10,
+      "question": "Can you see my destiny?",
+      "question_length": 23,
+      "response": "Mirror, mirror on the wall... Can you see my destiny?",
+      "response_length": 53,
+      "response_time_ms": 427.8,
+      "error": null,
+      "timestamp": "2025-10-05T10:21:15.244947"
+    }
+  ],
+  "statistics": {
+    "total_tests": 10,
+    "successful": 10,
+    "failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 551.19,
+    "min_response_time_ms": 389.64,
+    "max_response_time_ms": 1216.52,
+    "avg_response_length": 62.5,
+    "min_response_length": 43,
+    "max_response_length": 90
+  }
+}

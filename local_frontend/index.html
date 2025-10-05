@@ -9,173 +9,295 @@
 
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            background: #1a1a2e;
+            background: #000;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            overflow: hidden;
         }
 
         .container {
             width: 100%;
-            max-width: 700px;
-            height: 85vh;
-            background: #16213e;
-            border-radius: 8px;
-            border: 1px solid #0f3460;
+            max-width: 800px;
+            height: 90vh;
+            position: relative;
+            background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1e 100%);
+            border-radius: 30px;
+            border: 8px solid #2a2a3e;
+            box-shadow:
+                0 0 60px rgba(138, 43, 226, 0.3),
+                inset 0 0 100px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Mirror frame effect */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, #8a2be2, #4b0082, #8a2be2);
+            border-radius: 32px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* Video background */
+        #video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            filter: blur(1px) grayscale(30%) contrast(90%) brightness(0.9);
+            z-index: 0;
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: linear-gradient(180deg,
+                rgba(26, 26, 46, 0.6) 0%,
+                rgba(15, 15, 30, 0.65) 50%,
+                rgba(26, 26, 46, 0.6) 100%);
         }
 
         .header {
-            background: #0f3460;
-            color: #e94560;
-            padding: 20px;
+            background: rgba(15, 52, 96, 0.4);
+            backdrop-filter: blur(10px);
+            color: #d4af37;
+            padding: 25px;
             text-align: center;
-            border-bottom: 1px solid #533483;
+            border-bottom: 2px solid rgba(138, 43, 226, 0.3);
         }
 
         .header h1 {
-            font-size: 1.8em;
-            margin-bottom: 5px;
+            font-size: 2.2em;
+            margin-bottom: 8px;
             font-weight: normal;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            animation: glow 3s ease-in-out infinite;
         }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+            50% { text-shadow: 0 0 30px rgba(212, 175, 55, 0.8); }
+        }
+
         .header p {
-            font-size: 0.9em;
-            color: #a0a0a0;
+            font-size: 0.95em;
+            color: #9370db;
             font-style: italic;
         }
+
         .status {
-            margin-top: 10px;
-            font-size: 0.8em;
+            margin-top: 12px;
+            font-size: 0.75em;
             font-family: monospace;
+            color: #8a8a8a;
         }
+
         .status-dot {
             display: inline-block;
             width: 8px;
             height: 8px;
             border-radius: 50%;
             margin-right: 6px;
+            animation: pulse 2s ease-in-out infinite;
         }
-        .status-dot.connected { background: #4ade80; }
-        .status-dot.error { background: #ef4444; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .status-dot.connected { background: #4ade80; box-shadow: 0 0 10px #4ade80; }
+        .status-dot.error { background: #ef4444; box-shadow: 0 0 10px #ef4444; }
 
         .chat {
             flex: 1;
             overflow-y: auto;
-            padding: 25px;
-            background: #16213e;
+            padding: 30px;
+            background: transparent;
         }
+
         .welcome {
             text-align: center;
-            padding: 40px 20px;
-            color: #a0a0a0;
-        }
-        .welcome h2 {
-            color: #e94560;
-            font-weight: normal;
-            margin-bottom: 10px;
+            padding: 60px 20px;
+            color: #9370db;
         }
 
-        .message { margin-bottom: 18px; }
+        .welcome h2 {
+            color: #d4af37;
+            font-weight: normal;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .camera-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(138, 43, 226, 0.3);
+            border: 1px solid #8a2be2;
+            color: #d4af37;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+
+        .camera-btn:hover {
+            background: rgba(138, 43, 226, 0.5);
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
         .message-content {
-            padding: 12px 16px;
-            border-radius: 4px;
+            padding: 15px 20px;
+            border-radius: 15px;
             max-width: 85%;
-            line-height: 1.7;
+            line-height: 1.8;
+            backdrop-filter: blur(10px);
         }
 
         .message.user { display: flex; justify-content: flex-end; }
         .message.user .message-content {
-            background: #0f3460;
+            background: rgba(138, 43, 226, 0.25);
             color: #fff;
-            border-left: 3px solid #e94560;
+            border: 1px solid rgba(138, 43, 226, 0.5);
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
         }
 
         .message.agent { display: flex; justify-content: flex-start; }
         .message.agent .message-content {
-            background: #1a1a2e;
+            background: rgba(26, 26, 46, 0.6);
             color: #d4af37;
-            border-left: 3px solid #533483;
+            border: 1px solid rgba(212, 175, 55, 0.3);
             white-space: pre-wrap;
             font-style: italic;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
         }
 
         .input-area {
-            padding: 18px;
-            border-top: 1px solid #0f3460;
-            background: #0f3460;
+            padding: 20px;
+            border-top: 2px solid rgba(138, 43, 226, 0.3);
+            background: rgba(15, 52, 96, 0.4);
+            backdrop-filter: blur(10px);
             display: flex;
-            gap: 10px;
+            gap: 12px;
         }
 
         input {
             flex: 1;
-            padding: 12px 16px;
-            border: 1px solid #533483;
-            background: #16213e;
+            padding: 14px 20px;
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            background: rgba(26, 26, 46, 0.6);
             color: #fff;
-            border-radius: 4px;
+            border-radius: 25px;
             font-size: 0.95em;
             outline: none;
+            font-family: inherit;
+            transition: all 0.3s;
         }
-        input:focus { border-color: #e94560; }
-        input::placeholder { color: #666; }
+        input:focus {
+            border-color: #8a2be2;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+        input::placeholder { color: #7a7a9a; }
 
         button {
-            padding: 12px 24px;
-            background: #e94560;
-            color: white;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            color: #d4af37;
             border: none;
-            border-radius: 4px;
+            border-radius: 25px;
             font-size: 0.95em;
             cursor: pointer;
             font-weight: 600;
-            transition: background 0.2s;
+            font-family: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
         }
-        button:hover { background: #c93750; }
-        button:disabled { opacity: 0.5; cursor: not-allowed; }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.6);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
 
         .error {
-            background: #2a1215;
+            background: rgba(42, 18, 21, 0.8);
             color: #ef4444;
-            padding: 12px;
-            border-radius: 4px;
+            padding: 15px;
+            border-radius: 10px;
             margin: 15px;
             text-align: center;
             border: 1px solid #ef4444;
+            backdrop-filter: blur(10px);
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0f3460; }
-        ::-webkit-scrollbar-thumb { background: #533483; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #e94560; }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: rgba(15, 52, 96, 0.2); }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(138, 43, 226, 0.5);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(138, 43, 226, 0.7); }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🪞 Magic Mirror</h1>
-            <p>Ask me anything in mystical verse...</p>
-            <div class="status">
-                <span class="status-dot" id="dot"></span>
-                <span id="status">Connecting...</span>
-            </div>
-        </div>
+        <!-- Video background (webcam) -->
+        <video id="video-bg" autoplay muted playsinline></video>
 
-        <div class="chat" id="chat">
-            <div class="welcome">
-                <h2>Welcome to the Magic Mirror</h2>
-                <p>Ask me anything, and I shall respond in verse...</p>
+        <!-- Content overlay -->
+        <div class="content-overlay">
+            <div class="header">
+                <h1>🪞 MAGIC MIRROR</h1>
+                <p>Peer into the enchanted glass...</p>
+                <div class="status">
+                    <span class="status-dot" id="dot"></span>
+                    <span id="status">Connecting...</span>
+                </div>
             </div>
-        </div>
 
-        <div class="input-area">
-            <input type="text" id="input" placeholder="Ask the magic mirror..." disabled>
-            <button id="send" disabled>Send</button>
+            <div class="chat" id="chat">
+                <div class="welcome">
+                    <h2>Welcome, Seeker</h2>
+                    <p>The mirror awaits your questions...<br>Speak, and wisdom shall answer in verse</p>
+                    <button class="camera-btn" id="cameraBtn">Enable Mirror Reflection</button>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="input" placeholder="Ask the magic mirror..." disabled>
+                <button id="send" disabled>Speak</button>
+            </div>
         </div>
     </div>
 
@@ -188,6 +310,34 @@
         const sendBtn = document.getElementById('send');
         const statusDot = document.getElementById('dot');
         const statusText = document.getElementById('status');
+        const videoBg = document.getElementById('video-bg');
+        const cameraBtn = document.getElementById('cameraBtn');
+
+        let cameraEnabled = false;
+
+        // Enable camera
+        async function enableCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: {
+                        width: { ideal: 1280 },
+                        height: { ideal: 720 },
+                        facingMode: 'user'
+                    }
+                });
+                videoBg.srcObject = stream;
+                cameraEnabled = true;
+                cameraBtn.textContent = '✓ Mirror Active';
+                cameraBtn.style.background = 'rgba(138, 43, 226, 0.5)';
+                console.log('[Mirror] Camera enabled');
+            } catch (err) {
+                console.error('[Mirror] Camera access denied:', err);
+                cameraBtn.textContent = '✗ Camera Denied';
+                cameraBtn.style.background = 'rgba(200, 50, 50, 0.3)';
+            }
+        }
+
+        cameraBtn.addEventListener('click', enableCamera);
 
         // Check backend connection
         async function checkConnection() {
@@ -200,15 +350,15 @@
                 });
                 if (res.ok || res.status === 400) {  // 400 is ok, means API is there
                     statusDot.className = 'status-dot connected';
-                    statusText.textContent = 'Connected to localhost:' + CHAT_PORT;
+                    statusText.textContent = 'Mirror Enchantment Active';
                     input.disabled = false;
                     sendBtn.disabled = false;
                     return true;
                 }
             } catch (e) {
                 statusDot.className = 'status-dot error';
-                statusText.textContent = 'Backend offline';
-                chat.innerHTML = '<div class="error">⚠️ Backend not running on port ' + CHAT_PORT + '<br>Start it with: ./2_run_backend.sh</div>';
+                statusText.textContent = 'Mirror Dormant';
+                chat.innerHTML = '<div class="error">⚠️ The Mirror sleeps...<br>Awaken it with: ./2_run_backend.sh</div>';
                 return false;
             }
         }
